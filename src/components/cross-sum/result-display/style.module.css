@@ -1,0 +1,47 @@
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.row {
+  width: 70px;
+  height: 60px;
+  flex-direction: row;
+}
+
+.column {
+  width: 60px;
+  height: 40px;
+  flex-direction: row;
+}
+
+.equals {
+  font-size: 1.25rem;
+  color: rgba(148, 163, 184, 0.6);
+}
+
+.value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgb(34, 197, 94);
+  min-width: 30px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .row {
+    width: 60px;
+    height: 50px;
+  }
+  
+  .column {
+    width: 50px;
+    height: 35px;
+  }
+  
+  .equals, .value {
+    font-size: 1rem;
+  }
+}
